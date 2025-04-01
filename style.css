@@ -2,6 +2,7 @@
   /* background-image: url(img/universo.jpg); */
   /* object-fit: cover;
   background-repeat: no-repeat;*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -9,9 +10,16 @@ body {
   background-image: url(img/universo.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-color: rgba(rgba(255, 0, 0, 0.35), green, blue, alpha);
+  
 
 }
+
+/*body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('tu-imagen.jpg') no-repeat center center fixed;
+  background-size: cover;
+}*/
+
 
 .titulo {
   text-align: center;
@@ -21,23 +29,64 @@ body {
 }
 
 .card {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
   border: solid 1px;
   background-color: gray;
   border-radius: 5px;
   margin: 10px;
   display: inline-block;
   padding: auto;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+}
 
+.card:hover{
+  cursor: pointer;
 }
 
 img {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
+  height: 180px;
+  width: 180px;
+  object-fit: fill;
+  padding-left: 35px;
+  filter: drop-shadow(0,0,15px gray);
+  transition: transform 0.3s ease-in-out;
+  
 }
 
+.card.head{
+  transition: background-color  1s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card .head:hover {
+  color: pink; /* Cambia el color al pasar el mouse */
+  transform: scale(1.1); /* Hace que el encabezado crezca un poco */
+  transition: 1sg;
+}
 .head {
   text-align: center;
+  transition: 1sg;
+  color: yellow;
+}
+
+.card .footer::first-letter {
+  text-transform: uppercase;
+  font-weight: bold; /* Opcional: puedes darle más énfasis */
+  font-weight: bold;
+}
+
+.footer{
+  font-size: 10px;
+  color: red;
+  padding: 20px;
+}
+
+.card img:hover {
+  filter: brightness(80%);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 1sg; /* Hace un ligero zoom */
 }
