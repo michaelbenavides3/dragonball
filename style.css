@@ -1,0 +1,334 @@
+* {
+  /* background-image: url(img/universo.jpg); */
+  /* object-fit: cover;
+  background-repeat: no-repeat;*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Grenze Gotisch', serif;
+  /*transition: all 1s ease-in-out; /* transicion global*/
+}
+
+
+body {
+  background-image: url(img/universo.jpg);
+  /*imagen de fondo*/
+  background-size: cover;
+  /*la imagen cubre toda la pantalla*/
+  background-position: center;
+  background-attachment: fixed;
+  /*el fondo no se mueve al hacer scroll*/
+  font-family: 'Grenze Gotisch', serif;
+}
+
+
+.titulo {
+  text-align: center;
+  /*centrar el texto*/
+  font-size: 50px;
+  /*tamaño grande*/
+  color: white;
+  /*color blanco*/
+  font-weight: bold;
+  /*tipo negrtia*/
+}
+
+
+.card {
+  height: 250px;
+  width: 250px;
+  border: solid 1.5px rgba(0, 0, 0, 0.2);
+  /*border sutil*/
+  background-color: rgb(192, 192, 192);
+  /*fondo de la tarjeta*/
+  border-radius: 5px;
+  /*bordes redondos*/
+  margin: 10px 30px;
+  /*espacio entre tarjetas*/
+  display: inline-block;
+  /*alinean horizontalmente*/
+  /*margin-left: 30px;*/
+  filter: scale(1);
+  /* Ahora completamente visible opacity ----> es mi opcion*/
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+  font-family: 'Grenze Gotisch', serif;
+  /*width: 18em; /*el ancho de la tarjeta es relativo al tamaño de la fuente*/
+  padding: 2em;
+  /*espacio basado en el tamaño de la fuente
+    margin: 1.5em;*/
+  /*width: 80vw; ancho del 80% de la ventana
+    height: 50vh; altura del 505de   la ventana
+    margin: 5vh auto; margen superior/inferior del 5% de la altura de la ventana*/
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  /* Hace un ligero zoom */
+  opacity: 0.8;
+}
+
+
+/*.card .head {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}*/
+
+
+.card img {
+  height: 180px;
+  /*altura de las imagenes*/
+  width: 180px;
+  /*ancho de las imagenes*/
+  /*opacity: 10; Establece la opacidad a 1 para hacer el elemento .card completamente opaco */
+  filter: drop-shadow(0px 0px 10px #66087f);
+  /*sombre sutil*/
+  opacity: 1;
+}
+
+.card img:hover {
+  filter: brightness(0.8);
+  /*reduce el brillo*/
+  cursor: pointer;
+  /*cambiar el cursor al pasar por encima*/
+  /*transition: 1s;*/
+  /*opacity: 0.8; /*reduce la opacidad*/
+}
+
+
+.head {
+  text-align: center;
+  transition: 1s;
+  color: #00ff00;
+}
+
+.card .head:hover {
+  color: #ffff00;
+  /* Cambia el color al pasar el mouse */
+  transform: scale(1.1);
+  /* Hace que el encabezado crezca un poco */
+  /*transition: 1s;
+    filter: opacity(10);*/
+}
+
+
+.footer {
+  font-size: 10px;
+  color: #e63946;
+  padding: 10px;
+}
+
+
+img {
+  height: 180px;
+  width: 180px;
+  object-fit: fill;
+  padding-left: 35px;
+  filter: drop-shadow(0, 0, 155px white);
+  transition: transform 1s ease-in-out;
+}
+
+
+/*.card .head {
+    color: yellow; /*cambia el color al pasar el mouse*/
+/*background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad
+    text-align: center;
+}*/
+
+
+/*.card .footer::first-letter {
+    text-transform: uppercase; /*primera letra en mayusucual*/
+/*font-weight: bold; /* Opcional: puedes darle más énfasis
+}*/
+
+
+/*.card img:hover {
+    filter: brightness(80%);
+}*/
+
+
+/*card1*/
+.card_card1 {
+  background-color: rgb(220, 20, 60);
+  /*rojo carmesi*/
+  border: solid 2px rgb(139, 0, 0);
+  /*rojo oscuro*/
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin: 10px 30px;
+  background: linear-gradient(90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      indigo,
+      violet);
+  /*los colores cambian a lo largo dde una linea recta*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card_card1 .head {
+  color: rgb(255, 250, 205);
+  /* Amarillo claro */
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /*convierte el texto en mayuscula*/
+  letter-spacing: 5px;
+  /*espacio entre letras*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  /*sombre en el texto*/
+}
+
+
+.card_card1:hover {
+  background-color: rgb(178, 34, 34);
+  /* Rojo fuego */
+}
+
+/* Card 2 */
+.card_card2 {
+  background-color: rgb(0, 128, 128);
+  /* Verde azulado */
+  border: solid 2px rgb(0, 100, 0);
+  /* Verde oscuro */
+  color: rgb(240, 255, 240);
+  /* Blanco verdoso para el texto */
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin: 10px 30px;
+  background: radial-gradient(circle,
+      yellow,
+      green,
+      purple,
+      #31deee);
+  /*gradiente en circulos*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card_card2 .head {
+  color: rgb(175, 238, 238);
+  /* Verde pastel */
+  font-size: 1.5rem;
+  /*1.5veces el tamaño raiz, es decir 24px*/
+}
+
+
+.card_card2:hover {
+  background-color: rgb(32, 178, 170);
+  /* Verde medio */
+}
+
+
+.card_card2 .footer {
+  font-size: 0.875rem;
+  /*mas pequeño equivale a 14px*/
+  margin-top: 0.5rem;
+}
+
+
+/* Card 3 */
+.card_card3 {
+  background-color: rgb(70, 130, 180);
+  /* Azul acero */
+  border: solid 2px rgb(25, 25, 112);
+  /* Azul medianoche */
+  color: rgb(255, 248, 220);
+  /* Blanco cremoso para el texto */
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  margin: 10px 30px;
+}
+
+
+.card_card3 .head {
+  color: rgb(240, 230, 140);
+  /* Amarillo dorado */
+  font-size: 40px;
+  /*px unidad fija siempre sera 25px independiente de otros factores*/
+}
+
+
+.card_card3:hover {
+  background-color: rgb(100, 149, 237);
+  /* Azul claro */
+}
+
+
+.card_card3 .footer {
+  font-size: 1em;
+  /*1 em = 1*16px = 16px*/
+}
+
+
+/* Card 4 */
+.card_card4 {
+  background-color: rgb(255, 165, 0);
+  /* Naranja */
+  border: solid 2px rgb(255, 69, 0);
+  /* Naranja rojizo */
+  color: rgb(0, 0, 0);
+  /* Negro para el texto */
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 10px 30px;
+}
+
+
+.card_card4 .head {
+  color: rgb(255, 215, 0);
+  /* Oro */
+}
+
+
+.card_card4:hover {
+  background-color: rgb(255, 140, 0);
+  /* Naranja oscuro */
+}
+
+
+/* Card 5 */
+.card_card5 {
+  background-color: rgb(154, 205, 50);
+  /* Verde amarillento */
+  border: solid 2px rgb(85, 107, 47);
+  /* Verde oliva */
+  color: rgb(0, 102, 0);
+  /* Verde oscuro para el texto */
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 10px 30px;
+}
+
+
+.card_card5 .head {
+  color: rgb(173, 255, 47);
+  /* Verde lima claro */
+}
+
+
+.card_card5:hover {
+  background-color: rgb(124, 252, 0);
+  /* Verde lima */
+}
+
+
+.contenedor_img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid#00ff00;
+  background-color: #228b22;
+  border-radius: 25px;
+  color: yellow;
+  flex-wrap: wrap;
+  object-fit: scale-down;
+}
